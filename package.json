@@ -1,16 +1,21 @@
 {
-  "name": "shake-n-bake",
-  "description": "Watch Something - When it (Shake)s then (Bake) do something else",
-  "version": "0.0.2",
+  "name": "get-post",
+  "description": "Simple Wrapper around Request to provide cli get and post",
+  "tags" : ["http", "simple", "get", "post","cli"]
+  "version": "0.0.1",
   "homepage": "",
   "author": "Tom Wilson",
   "private": false,
   "dependencies": {
-    "request": ">= 0"
+    "request": ">= 2.1.x"
   },
   "devDependencies": {
     "coffee-script": ">= 1.x.x",
     "jasmine-node": ">= 0"
   },
+  "bin": {
+      "get": "./bin/get",
+      "post": "./bin/post"
+    }  
   "engines": { "node": ">= 0.4.11" }
 }
