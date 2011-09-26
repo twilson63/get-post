@@ -1,0 +1,16 @@
+{
+  "name": "shake-n-bake",
+  "description": "Watch Something - When it (Shake)s then (Bake) do something else",
+  "version": "0.0.2",
+  "homepage": "",
+  "author": "Tom Wilson",
+  "private": false,
+  "dependencies": {
+    "request": ">= 0"
+  },
+  "devDependencies": {
+    "coffee-script": ">= 1.x.x",
+    "jasmine-node": ">= 0"
+  },
+  "engines": { "node": ">= 0.4.11" }
+}
