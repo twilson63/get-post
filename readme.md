@@ -1,4 +1,4 @@
-# get-post
+# get-post json cli
 
 Simple NodeJs json http request command-line client.  A cli
 wrapper around Request by Mikeal Rogers. Everything gets
@@ -15,11 +15,11 @@ npm install get-post -g
 Do a simple get as 'application/json' :
 
 ```
-get "http://echo.heroku.com/1c97badde"
+get "http://twitter.com/search.json?q=nodejs"
 ```
 
 Do a simple json post:
 
 ```
-post http://echo.heroku.com/1c97badde {"hello":"world"}
+post http://echo-json.heroku.com '{"hello":"world"}'
 ```

@@ -2,7 +2,7 @@
   "name": "get-post",
   "description": "Simple Wrapper around Request to provide cli get and post",
   "tags" : ["http", "simple", "get", "post","cli"]
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "",
   "author": "Tom Wilson",
   "private": false,
