@@ -3,7 +3,16 @@
   request = require('request');
   module.exports = {
     get: function() {
-      return request(process.argv[2], function(err, resp, body) {
+      if (!process.argv[2]) {
+        return console.log('get [uri] - uri is required ex. http://twitter.com/search.json&q=nodejs');
+      }
+      if (!process.argv[2].match(/https?\:\/\/(.*)\.(.*)/)) {
+        return console.log('get [uri] - uri is not valid');
+      }
+      return request({
+        uri: process.argv[2],
+        json: true
+      }, function(err, resp, body) {
         return console.log(body);
       });
     },
