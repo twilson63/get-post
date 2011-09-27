@@ -4,7 +4,7 @@
   module.exports = {
     get: function() {
       if (!process.argv[2]) {
-        return console.log('get [uri] - uri is required ex. http://twitter.com/search.json&q=nodejs');
+        return console.log('get [uri] - uri is required ex. http://twitter.com/search.json?q=nodejs');
       }
       if (!process.argv[2].match(/https?\:\/\/(.*)\.(.*)/)) {
         return console.log('get [uri] - uri is not valid');

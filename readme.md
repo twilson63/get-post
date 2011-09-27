@@ -2,7 +2,7 @@
 
 Simple NodeJs json http request command-line client.  A cli
 wrapper around Request by Mikeal Rogers. Everything gets
-or posts via application/json.
+or posts via content-type application/json.
 
 # Installation
 
@@ -23,3 +23,8 @@ Do a simple json post:
 ```
 post http://echo-json.heroku.com '{"hello":"world"}'
 ```
+
+# Thanks
+
+Mikeal Rogers for Request
+Ryan Dahl for Nodejs
