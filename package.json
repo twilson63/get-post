@@ -1,7 +1,7 @@
 {
   "name": "get-post",
   "description": "Simple Wrapper around Request to provide cli get and post",
-  "tags" : ["http", "simple", "get", "post","cli"]
+  "tags" : ["http", "simple", "get", "post","cli"],
   "version": "0.0.2",
   "homepage": "http://github.com/twilson63/get-post",
   "author": "Tom Wilson",
@@ -18,8 +18,8 @@
     "jasmine-node": ">= 0"
   },
   "bin": {
-      "zget": "./bin/zget",
-      "zpost": "./bin/zpost"
-    }  
+      "get": "./bin/get",
+      "post": "./bin/post"
+    },  
   "engines": { "node": ">= 0.4.11" }
 }
