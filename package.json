@@ -18,8 +18,8 @@
     "jasmine-node": ">= 0"
   },
   "bin": {
-      "get": "./bin/get",
-      "post": "./bin/post"
+      "zget": "./bin/zget",
+      "zpost": "./bin/zpost"
     }  
   "engines": { "node": ">= 0.4.11" }
 }
