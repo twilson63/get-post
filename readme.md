@@ -26,5 +26,5 @@ post http://echo-json.heroku.com '{"hello":"world"}'
 
 # Thanks
 
-Mikeal Rogers for Request
-Ryan Dahl for Nodejs
+* Mikeal Rogers for Request
+* Ryan Dahl for Nodejs
