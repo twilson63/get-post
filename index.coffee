@@ -2,7 +2,7 @@ request = require 'request'
 module.exports =
   get: ->
     return console.log 'get [uri] - uri is required ex. http://twitter.com/search.json?q=nodejs' unless process.argv[2]
-    return console.log 'get [uri] - uri is not valid' unless process.argv[2].match /https?\:\/\/(.*)\.(.*)/
+    return console.log 'get [uri] - uri is not valid' unless process.argv[2].match /https?\:\/\/(.*)(\.|:)(.*)/
     request uri: process.argv[2], json: true, (err, resp, body) ->
       console.log body
   post: ->
