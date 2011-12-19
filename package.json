@@ -2,7 +2,7 @@
   "name": "get-post",
   "description": "Simple Wrapper around Request to provide cli get and post",
   "tags" : ["http", "simple", "get", "post","cli"],
-  "version": "0.0.4444",
+  "version": "0.1.0",
   "homepage": "http://github.com/twilson63/get-post",
   "author": "Tom Wilson",
   "private": false,
@@ -14,8 +14,9 @@
     "request": ">= 2.1.x"
   },
   "devDependencies": {
-    "coffee-script": ">= 1.x.x",
-    "jasmine-node": ">= 0"
+    "coffee-script": "~ 1.2.x",
+    "mocha": "*",
+    "should": "*"
   },
   "bin": {
       "get": "./bin/get",

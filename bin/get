@@ -4,4 +4,15 @@ var path = require('path');
 var fs   = require('fs');
 var root  = path.join(path.dirname(fs.realpathSync(__filename)), '..');
 
-require(root + '/index').get();
+// # GET Command
+// 
+// Usage:
+//
+// ``` sh
+//  get "http://twitter.com/search.json?q=nodejs"
+// ```
+require(root + '/index').get(process.argv[2], function(err, data) {
+  if (err === null) {
+    console.log(data);
+  }
+});
