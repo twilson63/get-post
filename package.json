@@ -1,8 +1,8 @@
 {
   "name": "get-post",
-  "description": "Simple Wrapper around Request to provide cli get and post",
-  "tags" : ["http", "simple", "get", "post","cli"],
-  "version": "0.0.4444",
+  "description": "Command Line Tools for transfering data via http with url syntax",
+  "tags" : ["http", "get", "post", "url"],
+  "version": "0.2.0",
   "homepage": "http://github.com/twilson63/get-post",
   "author": "Tom Wilson",
   "private": false,
@@ -11,11 +11,12 @@
     "url" : "git://github.com/twilson63/get-post.git"
   },
   "dependencies": {
-    "request": ">= 2.1.x"
+    "request": "*"
   },
   "devDependencies": {
     "coffee-script": ">= 1.x.x",
-    "jasmine-node": ">= 0"
+    "mocha": "*",
+    "should": "*"
   },
   "bin": {
       "get": "./bin/get",
