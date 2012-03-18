@@ -4,4 +4,4 @@ var path = require('path')
 , fs  = require('fs')
 , gp  = require(path.join(path.dirname(fs.realpathSync(__filename)), '..'))
 
-gp.get(process.argv[2]).pipe(process.stdout);
+gp.get(process.argv[2]).pipe(process.stdout)
